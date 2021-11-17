@@ -1,0 +1,10 @@
+- hosts: all
+  become: true
+  tasks:
+     - name: debugging the facts
+       debug:
+          var=hostvars[inventory_hostname]['ansible_default_ipv4']['address']
+     - name: install the apache package
+       apt:
+        name: apache2
+        state: present
