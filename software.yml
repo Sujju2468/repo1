@@ -1,0 +1,14 @@
+##installing the softwares
+- hosts: 192.168.136.130
+  gather_facts: yes
+  become: yes
+  become_user: root
+  tasks:
+    -  name: installing apache2 server
+       apt:
+         name: httpd
+         state: latest
+    -  name: starting apache2 server
+       service: 
+         name: httpd
+         state: restarted
