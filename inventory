@@ -1,0 +1,8 @@
+[host]
+192.168.136.130 user_name=sujju
+#10.95.71.189 user_name=developer
+#10.95.71.8 user_name=admin
+# localhost user_name=itadmin
+[host:vars]
+url_username=buntu 
+url_password=password
