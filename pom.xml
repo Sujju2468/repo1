@@ -23,7 +23,3 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
   </dependencies>  
   
 </project>
-<plugin>
-    <artifactId>maven-war-plugin</artifactId>
-    <version>3.3.1</version>
-</plugin>
